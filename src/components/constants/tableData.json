@@ -1,0 +1,40 @@
+{
+    "tableData": [
+        {
+            "id": 1,
+            "rowImage":"Brightness5OutlinedIcon",
+            "product": "Dribble",
+            "soldAmount": 523,
+            "unitPrice": 315,
+            "revenue": 52120,
+            "rating": 4.11
+        },
+        {
+            "id": 2,
+            "rowImage":"DeveloperModeOutlinedIcon",
+            "product": "Figma",
+            "soldAmount": 230,
+            "unitPrice": 233,
+            "revenue": 25440,
+            "rating": 3.35
+        },
+        {
+            "id": 3,
+            "rowImage":"NotificationsNoneOutlinedIcon",
+            "product": "Snapchat",
+            "soldAmount": 205,
+            "unitPrice": 159,
+            "revenue": 14012,
+            "rating": 3.01
+        },
+        {
+            "id": 4,
+            "rowImage":"CloseOutlinedIcon",
+            "product": "Ripple",
+            "soldAmount": 158,
+            "unitPrice": 120,
+            "revenue": 9711,
+            "rating": 2.15
+        }
+    ]
+}
