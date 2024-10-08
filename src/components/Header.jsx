@@ -13,12 +13,9 @@ import { icons } from './constants/constant';
 const Header = () => {
     const t = useTheme()
     const isMatch = useMediaQuery('(max-width: 1000px)');
-
     const isBelowSM = useMediaQuery(t.breakpoints.down('sm'));
     console.log("Ismedium" + isMatch);
-
     const fontS = isBelowSM ? 10 : 14
-
     const theme = createTheme({
         components: {
             MuiTypography: {
@@ -48,12 +45,12 @@ const Header = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Box sx={{ backgroundColor: '#f5f5f5', paddingTop: 10, overflow: 'hidden' }} display="flex">
-                <Stack direction="row" spacing={2} ml={isMatch ? 0 : 10} flexDirection={isMatch ? "column" : 'row'} flexWrap={isMatch ? "wrap" : "nowrap"}>
-                    <Box width={isMatch ? "100%" : "70%"}>
-                        <Grid container spacing={2}>
+            <Box sx={{ backgroundColor: '#f5f5f5', paddingTop: 10, overflow: 'hidden' }} display="flex"   >
+                <Stack direction="row" spacing={2} flexDirection={isMatch ? "column" : 'row'} flexWrap={isMatch ? "wrap" : "nowrap"} >
+                    <Box width={isMatch ? "100%" : "70%"} >
+                        <Grid container spacing={2} justifyContent="center" alignItems="center">
                             <Grid item sm={12} >
-                                <Stack direction="row" height='8rem' spacing={3} flexWrap={isMatch ? "wrap" : "nowrap"} alignItems="flex-start" justifyContent={isMatch ? "flex-start" : "flex-start"}>
+                                <Stack direction="row" height='8rem'  flexWrap={isMatch ? "wrap" : "nowrap"} alignItems="flex-start" justifyContent="center"  gap={2}>
                                     <Stack>
                                         <Stack direction="row" spacing={1}>
                                             <GridViewOutlinedIcon />
@@ -126,9 +123,9 @@ const Header = () => {
                             </Grid>
 
 
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={6} sm={10}>
                                 <Box
-                                    width={isMatch ? "90%" : "100%"}
+                                    
                                     height={isMatch ? '15rem' : '17rem'}
                                     sx={{
                                         backgroundImage: `url(${Image_URL1})`,
@@ -155,9 +152,9 @@ const Header = () => {
                                 </Box>
                             </Grid>
 
-                            <Grid item xs={12} md={6}>
+                            <Grid item xs={12} md={6} sm={10}>
                                 <Box
-                                    width={isMatch ? "90%" : "100%"}
+                                   
                                     height={isMatch ? '15rem' : '17rem'}
                                     sx={{
                                         backgroundImage: `url(${Image_URL2})`,
@@ -177,7 +174,7 @@ const Header = () => {
 
 
 
-                            <Grid item xs={12} mx={3} md={6} lg={12} mt={6} width={isMatch ? "100vw" : "30%"} alignItems="center" justifyContent="center">
+                            <Grid item  mx={3} xs={12} md={10} sm={10} lg={12} mt={6}  alignItems="center" justifyContent="center" >
                                 <Typography variant='h6' component='h4' mb={6}>Top Products</Typography>
                                 <Table width={isMatch ? "80%" : "70%"}>
                                     <TableHead>
@@ -208,8 +205,8 @@ const Header = () => {
                         </Grid>
                     </Box>
 
-                    <Stack spacing={2} width={isMatch ? "100vw" : "30%"} alignItems="center" justifyContent="space-between">
-                        <Stack spacing={2} width={isMatch ? "80%" : "70%"} sx={{ borderRadius: 2 }}  >
+                    <Stack spacing={2} xs={12} md={6} sm={10} alignItems="center" justifyContent="space-between" >
+                        <Stack spacing={2} width={isMatch ? "80%" : "70%"} sx={{ borderRadius: 2 }}  marginTop={isMatch?'1rem':0} >
                             <Typography variant='h6' component='h4' align='center'>Where your money go?</Typography>
                             <Stack direction="column" spacing={1} width="100%">
                                 <Stack direction="column" spacing={1} width="100%" mb={2}>
