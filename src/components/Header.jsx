@@ -12,7 +12,8 @@ import { icons } from './constants/constant';
 
 const Header = () => {
     const t = useTheme()
-    const isMatch = useMediaQuery(t.breakpoints.down('md'));
+    const isMatch = useMediaQuery('(max-width: 1000px)');
+
     const isBelowSM = useMediaQuery(t.breakpoints.down('sm'));
     console.log("Ismedium" + isMatch);
 
@@ -48,11 +49,11 @@ const Header = () => {
     return (
         <ThemeProvider theme={theme}>
             <Box sx={{ backgroundColor: '#f5f5f5', paddingTop: 10, overflow: 'hidden' }} display="flex">
-                <Stack direction="row" spacing={2} ml={isMatch ? 0 : 10} flexDirection={isMatch ? "column" : 'row'}>
+                <Stack direction="row" spacing={2} ml={isMatch ? 0 : 10} flexDirection={isMatch ? "column" : 'row'} flexWrap={isMatch ? "wrap" : "nowrap"}>
                     <Box width={isMatch ? "100%" : "70%"}>
                         <Grid container spacing={2}>
                             <Grid item sm={12} >
-                                <Stack direction="row" height='8rem' spacing={3} flexWrap={isMatch ? "wrap" : "nowrap"} alignItems="flex-start" justifyContent={isMatch ? "flex-start" : "flex-start"}>
+                                <Stack direction="row" height='8rem' spacing={3} flexWrap={isMatch ? "wrap" : "nowrap"} alignItems="flex-start" justifyContent="center">
                                     <Stack>
                                         <Stack direction="row" spacing={1}>
                                             <GridViewOutlinedIcon />
@@ -282,8 +283,6 @@ const Header = () => {
 
                     </Stack>
                 </Stack>
-
-
             </Box>
         </ThemeProvider>
     );
