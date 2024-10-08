@@ -5,8 +5,11 @@ import DrawerComponent from "./DrawerComponent";
 import { icons } from "./constants/constant";
 const useNavStyle = makeStyles({
     header :{
-        backgroundColor : "white",
-        color:"black",
+        '&.MuiPaper-root':{
+            backgroundColor : "white",
+            color:"black",
+        }
+        
         
     }
 });
