@@ -13,6 +13,7 @@ import { icons } from './constants/constant';
 const Header = () => {
     const t = useTheme()
     const isMatch = useMediaQuery('(max-width: 1000px)');
+    const isAboveMd= useMediaQuery(t.breakpoints.up('md'))
     const isBelowSM = useMediaQuery(t.breakpoints.down('sm'));
     console.log("Ismedium" + isMatch);
     const fontS = isBelowSM ? 10 : 14
@@ -46,7 +47,7 @@ const Header = () => {
     return (
         <ThemeProvider theme={theme}>
             <Box sx={{ backgroundColor: '#f5f5f5', paddingTop: 10, overflow: 'hidden' }} display="flex"   >
-                <Stack direction="row" spacing={2} flexDirection={isMatch ? "column" : 'row'} flexWrap={isMatch ? "wrap" : "nowrap"} >
+                <Stack direction="row" spacing={2} flexDirection={isMatch ? "column" : 'row'} flexWrap={isMatch ? "wrap" : "nowrap"}  marginLeft={isAboveMd?"2rem":0} >
                     <Box width={isMatch ? "100%" : "70%"} >
                         <Grid container spacing={2} justifyContent="center" alignItems="center">
                             <Grid item sm={12} >
