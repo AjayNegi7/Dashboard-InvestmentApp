@@ -16,7 +16,7 @@ const DrawerComponent = () => {
 
     return (
         <>
-            <IconButton sx={{ marginLeft: "auto", color: "white" }} onClick={handleMenuClick}>
+            <IconButton sx={{ marginLeft: "auto", color: "Black" }} onClick={handleMenuClick}>
                 <MenuRoundedIcon />
             </IconButton>
             <Menu
