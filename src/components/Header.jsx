@@ -53,7 +53,7 @@ const Header = () => {
                     <Box width={isMatch ? "100%" : "70%"}>
                         <Grid container spacing={2}>
                             <Grid item sm={12} >
-                                <Stack direction="row" height='8rem' spacing={3} flexWrap={isMatch ? "wrap" : "nowrap"} alignItems="flex-start" justifyContent="center">
+                                <Stack direction="row" height='8rem' spacing={3} flexWrap={isMatch ? "wrap" : "nowrap"} alignItems="flex-start" justifyContent={isMatch ? "flex-start" : "flex-start"}>
                                     <Stack>
                                         <Stack direction="row" spacing={1}>
                                             <GridViewOutlinedIcon />
