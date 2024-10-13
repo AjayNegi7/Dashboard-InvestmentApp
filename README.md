@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# React Dashboard Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a responsive dashboard application built with React and Material-UI. It provides an interactive interface to display key metrics and data insights, including a navigation drawer for mobile users, a header with statistics, and a table to showcase products.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Responsive Design**: Adapts to different screen sizes using Material-UI components.
+- **Dynamic Data Display**: Displays metrics, progress indicators, and tables populated from a JSON file.
+- **Mobile Navigation**: A drawer component for easy navigation on smaller devices.
+- **Theming**: Customizable theme with Material-UI’s theme provider.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React**: A JavaScript library for building user interfaces.
+- **Material-UI**: A popular React UI framework for implementing responsive layouts and components.
+- **JavaScript**: For client-side scripting.
+- **JSON**: For data management.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/AjayNegi7/Dashboard-InvestmentApp.git
+   cd dashboard
+   ```
 
-### `npm run build`
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Run the application:**:
+   ```bash
+   npm start
+   ```
+## Components
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Header Component
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The `Header` component contains:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Key metrics displayed with icons.
+- Visual representations in the form of image boxes.
+- A table listing top products from a JSON data source.
+- Progress indicators for financial insights.
 
-### `npm run eject`
+### Drawer Component
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The `DrawerComponent` provides:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- A responsive menu icon that opens a navigation drawer.
+- Menu items for navigating different sections of the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Navbar Component
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The `Navbar` component features:
 
-## Learn More
+- An application logo.
+- Navigation tabs for larger screens.
+- Icons for search and notifications.
+- Responsive design switching to a drawer on smaller screens.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
